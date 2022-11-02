@@ -221,3 +221,53 @@ Your branch is up to date with 'origin/dev'.
 
 nothing to commit, working tree clean
 ```
+
+## Bundle 2
+
+### Exercise 1
+
+```bash
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercises> git add README.md
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercises> git commit -m "Adding Exercise 2 commads to the README file"
+ 1 file changed, 117 insertions(+)
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Odile078/git-exercises.git
+branch 'dev' set up to track 'origin/dev'.
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercises> git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercises> git add services.html
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercises> git commit -m "Adding services page"
+[ft/bundle-2 ad02c87] Adding services page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 services.html
+error: src refspec ft/bundle does not match any
+error: failed to push some refs to 'https://github.com/Odile078/git-exercises.git'
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercises> git push
+fatal: The current branch ft/bundle-2 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/bundle-2
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercises>  git push --set-upstream origin ft/bundle-2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 469 bytes | 156.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/Odile078/git-exercises/pull/new/ft/bundle-2
+remote:
+To https://github.com/Odile078/git-exercises.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercises>
+```
