@@ -71,6 +71,36 @@ Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/Odile078/git-exercises.git
    a6dbf90..4657c17  main -> main
 branch 'main' set up to track 'origin/main'.
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercise-1> git add .
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercise-1> git commit -m "Updating the README fil"
+[main 1e51b00] Updating the README fil
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercise-1> git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 319 bytes | 159.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Odile078/git-exercises.git
+   4657c17..1e51b00  main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercise-1> git checkout dev
+Switched to branch 'dev'
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercise-1> git add .
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercise-1> git commit -m "Adding commands used the the README file in dev branch"
+[dev 3fc0b5c] Adding commands used the the README file in dev branch
+ 1 file changed, 69 insertions(+)
+ PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercise-1> git push -u origin dev
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 1.08 KiB | 552.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Odile078/git-exercises.git
+   a6dbf90..3fc0b5c  dev -> dev
+branch 'dev' set up to track 'origin/dev'.
+
 
 
 ```
