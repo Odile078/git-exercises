@@ -272,3 +272,75 @@ branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
 PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercises>
 ```
 
+### Exercise 2
+
+```bash
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercises> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercises> git pull
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 1.29 KiB | 82.00 KiB/s, done.
+From https://github.com/Odile078/git-exercises
+   196996b..f2c6b96  main       -> origin/main
+Updating 196996b..f2c6b96
+Fast-forward
+ services.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercises> git checkout  ft/service-redesigns
+error: pathspec 'ft/service-redesigns' did not match any file(s) known to git
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercises> git checkout  -b ft/service-redesigns
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+Switched to branch 'ft/service-redesign'
+Your branch is up to date with 'origin/ft/service-redesign'.
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercises> git add services.html
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercises> git commit -m "Making changes to services.html"
+[ft/service-redesign 72ab878] Making changes to services.html
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercises> git push -u origin  ft/service-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Writing objects: 100% (3/3), 309 bytes | 309.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+   6219506..72ab878  ft/service-redesign -> ft/service-redesign
+branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
+Your branch is up to date with 'origin/main'.
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercises> git add services.html
+Everything up-to-date
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercises> git add services.html
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercises> git commit -m "Making changes to services.html"
+[main 52d55e0] Making changes to services.html
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercises> git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Writing objects: 100% (3/3), 306 bytes | 306.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+To https://github.com/Odile078/git-exercises.git
+   f2c6b96..52d55e0  main -> main
+branch 'main' set up to track 'origin/main'.
+#
+Your branch is up to date with 'origin/ft/service-redesign'.
+Auto-merging services.html
+CONFLICT (content): Merge conflict in services.html
+Automatic merge failed; fix conflicts and then commit the result.
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercises> git add services.html
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercises> git commit
+[ft/service-redesign 0167179] Merge branch 'main' into ft/service-redesign
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercises> git push -u origin  ft/service-redesign
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 245 bytes | 245.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Odile078/git-exercises.git
+   72ab878..0167179  ft/service-redesign -> ft/service-redesign
+branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercises>
+```
